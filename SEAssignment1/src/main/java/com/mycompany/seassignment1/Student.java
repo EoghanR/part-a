@@ -1,6 +1,7 @@
 package com.mycompany.seassignment1;
 
 import java.util.Calendar;
+import java.util.ArrayList;
 /**
  *
  * @author Eoghan
@@ -12,8 +13,8 @@ public class Student {
     private String DOB;
     private int ID;
     private String username;
-    private String course;
-    private String[] modules;
+    private Course course;
+    private ArrayList<Module> modules;
     
     public Student(String n, int a, String dob, int id){
         this.name = n;
