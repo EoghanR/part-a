@@ -9,6 +9,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.joda.time.DateTime;
 
 /**
  *
@@ -33,7 +34,7 @@ public class StudentTest {
     @Test
     public void testGetUsername() {
         System.out.println("getUsername");
-        Student instance = new Student("Eoghan", 21, "22/06/1997", 15310661);
+        Student instance = new Student("Eoghan", 21, new DateTime(1997, 06, 22, 0, 0), 15310661);
         String expResult = "Eoghan21";
         String result = instance.getUsername();
         assertEquals(expResult, result);
