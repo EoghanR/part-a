@@ -1,7 +1,7 @@
 package com.mycompany.seassignment1;
 
-import java.util.Calendar;
 import java.util.ArrayList;
+import java.util.Collection;
 import org.joda.time.DateTime;
 /**
  *
@@ -29,4 +29,61 @@ public class Student {
         return un;
     }
     
+    public void addModule(Module m){
+        this.modules.add(m);
+    }
+    
+    public void addModule(Collection<Module> m){
+        this.modules.addAll(m);
+    }
+    
+    
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public DateTime getDOB() {
+        return DOB;
+    }
+
+    public void setDOB(DateTime DOB) {
+        this.DOB = DOB;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
+    public ArrayList<Module> getModules() {
+        return modules;
+    }
+
+    public void setModules(ArrayList<Module> modules) {
+        this.modules = modules;
+    }
 }

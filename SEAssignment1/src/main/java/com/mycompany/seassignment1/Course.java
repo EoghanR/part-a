@@ -31,4 +31,38 @@ public class Course {
     public void addModule(Collection<Module> m){
         this.modules.addAll(m);
     }
+
+    
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ArrayList<Module> getModules() {
+        return modules;
+    }
+
+    public void setModules(ArrayList<Module> modules) {
+        this.modules = modules;
+    }
+
+    public DateTime getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(DateTime startDate) {
+        this.startDate = startDate;
+    }
+
+    public DateTime getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(DateTime endDate) {
+        this.endDate = endDate;
+    }
 }
