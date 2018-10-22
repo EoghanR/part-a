@@ -7,7 +7,6 @@ package com.mycompany.seassignment1;
 
 import org.joda.time.DateTime;
 import java.util.ArrayList;
-import java.util.Collection;
 /**
  *
  * @author Eoghan
@@ -15,6 +14,7 @@ import java.util.Collection;
 public class Course {
     private String name;
     private ArrayList<Module> modules;
+    private ArrayList<Student> students;
     private DateTime startDate;
     private DateTime endDate;
     
@@ -26,12 +26,14 @@ public class Course {
     
     public void addModule(Module m){
         this.modules.add(m);
+        m.addCourse(this);
     }
     
-    public void addModule(Collection<Module> m){
-        this.modules.addAll(m);
+    public void addStudent(Student s){
+        this.students.add(s);
+        s.setCourse(this);
     }
-
+    
     
     
     public String getName() {

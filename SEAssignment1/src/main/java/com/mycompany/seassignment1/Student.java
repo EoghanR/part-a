@@ -1,7 +1,6 @@
 package com.mycompany.seassignment1;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import org.joda.time.DateTime;
 /**
  *
@@ -31,10 +30,6 @@ public class Student {
     
     public void addModule(Module m){
         this.modules.add(m);
-    }
-    
-    public void addModule(Collection<Module> m){
-        this.modules.addAll(m);
     }
     
     

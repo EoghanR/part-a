@@ -6,7 +6,6 @@
 package com.mycompany.seassignment1;
 
 import java.util.ArrayList;
-import java.util.Collection;
 /**
  *
  * @author Eoghan
@@ -15,6 +14,7 @@ public class Module {
     private String moduleName;
     private String moduleId;
     private ArrayList<Student> students;
+    private ArrayList<Course> courses;
     
     public Module(String mn, String mi){
         this.moduleName = mn;
@@ -23,10 +23,11 @@ public class Module {
     
     public void addStudent(Student s){
         this.students.add(s);
+        s.addModule(this);
     }
     
-    public void addStudent(Collection<Student> s){
-        this.students.addAll(s);
+    public void addCourse(Course c){
+        this.courses.add(c);
     }
 
     
