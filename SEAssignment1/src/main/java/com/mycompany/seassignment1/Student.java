@@ -14,7 +14,7 @@ public class Student {
     private int ID;
     private String username;
     private Course course;
-    private ArrayList<Module> modules;
+    private ArrayList<Module> modules = new ArrayList<>();
     
     public Student(String n, int a, DateTime dob, int id){
         this.name = n;

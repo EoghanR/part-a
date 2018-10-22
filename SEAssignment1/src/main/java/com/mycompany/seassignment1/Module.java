@@ -13,8 +13,8 @@ import java.util.ArrayList;
 public class Module {
     private String moduleName;
     private String moduleId;
-    private ArrayList<Student> students;
-    private ArrayList<Course> courses;
+    private ArrayList<Student> students = new ArrayList<>();
+    private ArrayList<Course> courses = new ArrayList<>();
     
     public Module(String mn, String mi){
         this.moduleName = mn;
