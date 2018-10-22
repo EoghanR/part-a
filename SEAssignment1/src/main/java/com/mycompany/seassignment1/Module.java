@@ -26,8 +26,21 @@ public class Module {
         s.addModule(this);
     }
     
+    public void addStudent(ArrayList<Student> s){
+        for(Student x : s){
+            this.students.add(x);
+            x.addModule(this);
+        }
+    }
+    
     public void addCourse(Course c){
         this.courses.add(c);
+    }
+    
+    public void addCourse(ArrayList<Course> c){
+        for(Course x : c){
+            this.courses.add(x);
+        }
     }
 
     

@@ -27,6 +27,7 @@ public class Course {
     public void addModule(Module m){
         this.modules.add(m);
         m.addCourse(this);
+        m.addStudent(this.students);
     }
     
     public void addStudent(Student s){
