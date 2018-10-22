@@ -43,6 +43,14 @@ public class Module {
         }
     }
 
+    public ArrayList<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(ArrayList<Course> courses) {
+        this.courses = courses;
+    }
+
     
     
     public String getModuleName() {

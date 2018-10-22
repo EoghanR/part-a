@@ -41,6 +41,14 @@ public class Course {
         return name;
     }
 
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(ArrayList<Student> students) {
+        this.students = students;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
